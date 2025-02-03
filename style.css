@@ -1,18 +1,19 @@
-body, div {
+* {
     box-sizing: border-box;
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
+
+html, body, .hidden {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    position: relative;
     background-color: #0D1431;
     margin: 0;
-    overflow: hidden;
+    min-width: 280px;
 }
 
 .wide {
@@ -67,7 +68,7 @@ svg {
 }
 
 @media(min-width: 1024px) {
-    body {
+    body, .hidden {
         justify-content: flex-start;
         align-items: flex-end;
         flex-direction: row;
