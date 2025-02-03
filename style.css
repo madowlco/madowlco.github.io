@@ -22,7 +22,8 @@ html, body, .hidden {
 
 .mob {
     position: relative;
-    width:600px
+    width:600px;
+    right: -120px;
 }
 
 .logo-box {
