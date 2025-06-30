@@ -37,7 +37,6 @@
         if (redirectUrl && redirectUrl.trim() !== '') {
             console.log(`Redirecting to: ${redirectUrl}`);
             try {
-                new URL(redirectUrl, window.location.origin);
                 window.location.href = redirectUrl;
             } catch (e) {
                 console.error("Invalid or malformed URL provided in 'goto' parameter:", redirectUrl);
